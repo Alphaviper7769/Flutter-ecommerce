@@ -16,5 +16,40 @@ class TTexts {
   static const String homeAppbarTitle = "Good Day for Shopping";
   static const String homeAppbarSubTitle = "Aayush Raturi";
 
+  // -- Authentication Heading Screen --
+  static const String loginScreenTitle = "Welcome Back";
+  static const String loginScreenSubTitle = "Discover Limitless Choices and Unmatched Convinience";
+  static const String loginScreenEmailHint = "Email";
+  static const String loginScreenPasswordHint = "Password";
+  static const String signupTitle = "Lets Create your Account";
+  static const String forgotPasswordTitle = "Forgot Password";
+  static const String forgotPasswordSubTitle = "Enter your email to reset your password";
+  static const String changePasswordTitle = "Paaword Reset Email Sent";
+  static const String changePasswordSubTitle = "We have sent you an email with a link to reset your password";
+  static const String confirmEmailTitle = "Verifu your email address";
+  static const String confirmEmailSubTitle = "We have sent you an email with a link to verify your email address";
+  static const String emailNotReceived = "Email not received?, check spam or resend";
+  static const String yourAccountCreatedTitle = "Your Account has been Created";
+  static const String yourAccountCreatedSubTitle = "Welcome to your Ultimate Shopping Experience: Your Account has been created successfully";
 
+// -- Authentication Form Text
+static const String firstName = "First Name";
+static const String lastName = "Last Name";
+static const String email = "Email";
+static const String password = "Password";
+static const String confirmPassword = "Confirm Password";
+static const String phoneNo = "Phone Number";
+static const String username = "Username";
+static const String rememberMe = "Remember Me";
+static const String forgotPassword = "Forgot Password?";
+static const String signIn = "Sign In";
+static const String createAccount = "Create Account";
+static const String orSignInWith = "Or Sign In With";
+static const String orSignUpWith = "Or Sign Up With";
+static const String iAgreeTo = "I agree to";
+static const String privacyPolicy = "Privacy Policy";
+static const String termsOfService = "Terms of Service";
+static const String verificationCode = "Verification Code";
+static const String resendCode = "Resend Code";
+static const String resendEmailin = "Resend Email in";
 }
