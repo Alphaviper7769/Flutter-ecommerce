@@ -1,3 +1,4 @@
+import 'package:ecommerce/features/authentication/screens/password_config/forget_password.dart';
 import 'package:ecommerce/features/authentication/screens/signup/signup.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
@@ -18,7 +19,7 @@ class loginForm extends StatelessWidget {
 
                     //Email
                     TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       prefixIcon: const Icon(Iconsax.direct_right),
                       labelText: TTexts.email,
                     ),
@@ -28,7 +29,7 @@ class loginForm extends StatelessWidget {
 
                     //Password
                     TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       prefixIcon: Icon(Iconsax.password_check),
                       labelText: TTexts.password,
                       suffix: Icon(Iconsax.eye_slash),
@@ -48,7 +49,7 @@ class loginForm extends StatelessWidget {
                       ],
                       ),
                       // Forget Password
-                      TextButton(onPressed: (){}, child: const Text(TTexts.forgotPassword))
+                      TextButton(onPressed: () => Get.to(()=> const ForgetPassword()), child: const Text(TTexts.forgotPassword))
                     ],
                     ),
 
@@ -59,7 +60,7 @@ class loginForm extends StatelessWidget {
                     width: double.infinity,
                     child: OutlinedButton(
                       onPressed: (){},
-                      child: Text(TTexts.signIn),
+                      child: const Text(TTexts.signIn),
                     ),
                     ),
                     const SizedBox(height: TSizes.spaceBtwItems,),
@@ -69,7 +70,7 @@ class loginForm extends StatelessWidget {
                     width: double.infinity,
                     child: OutlinedButton(
                       onPressed: ()=> Get.to(()=>SignupScreen()),
-                      child: Text(TTexts.createAccount),
+                      child: const Text(TTexts.createAccount),
                     ),
                     ),
 

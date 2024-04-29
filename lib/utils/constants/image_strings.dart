@@ -18,5 +18,6 @@ class TImages {
   // -- Mail Verification -- //
   static const String mailVerification = 'assets/images/login/sammy-line-man-receives-a-mail.png';
   static const String mailSuccess = 'assets/images/login/sammy-line-man-and-woman-high-fiving-each-other.png';
+  static const String resetPassword = 'assets/images/login/sammy-line-41.png';
 
 }

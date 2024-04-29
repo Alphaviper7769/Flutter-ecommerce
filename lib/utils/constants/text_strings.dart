@@ -23,7 +23,7 @@ class TTexts {
   static const String loginScreenPasswordHint = "Password";
   static const String signupTitle = "Lets Create your Account";
   static const String forgotPasswordTitle = "Forgot Password";
-  static const String forgotPasswordSubTitle = "Enter your email to reset your password";
+  static const String forgotPasswordSubTitle = "Don't worry sometimes people can forget too, enter your email and we will send you a password reset link.";
   static const String changePasswordTitle = "Paaword Reset Email Sent";
   static const String changePasswordSubTitle = "We have sent you an email with a link to reset your password";
   static const String confirmEmailTitle = "Verify your email address!";
@@ -56,4 +56,7 @@ static const String termsOfService = "Terms of Service";
 static const String verificationCode = "Verification Code";
 static const String resendCode = "Resend Code";
 static const String resendEmailin = "Resend Email in";
+static const String submit = "Submit";
+static const String resetPasswordTitle = "Password Reset Mail Sent";
+static const String resetPasswordSubTitle = "Your Account Security is Our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
 }
