@@ -26,11 +26,14 @@ class TTexts {
   static const String forgotPasswordSubTitle = "Enter your email to reset your password";
   static const String changePasswordTitle = "Paaword Reset Email Sent";
   static const String changePasswordSubTitle = "We have sent you an email with a link to reset your password";
-  static const String confirmEmailTitle = "Verifu your email address";
-  static const String confirmEmailSubTitle = "We have sent you an email with a link to verify your email address";
+  static const String confirmEmailTitle = "Verify your email address!";
+  static const String confirmEmailSubTitle = "We have sent you an email with a link to verify your email  address. Please check your inbox and click on the link to verify your email address and enjoy the full benefits of our platform.";
   static const String emailNotReceived = "Email not received?, check spam or resend";
   static const String yourAccountCreatedTitle = "Your Account has been Created";
   static const String yourAccountCreatedSubTitle = "Welcome to your Ultimate Shopping Experience: Your Account has been created successfully";
+  static const String supportEmail = "abc@xyz.com";
+  static const String con = "Continue";
+  static const String resendEmail = "Resend Email";
 
 // -- Authentication Form Text
 static const String firstName = "First Name";

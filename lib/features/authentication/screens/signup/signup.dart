@@ -1,13 +1,10 @@
 import 'package:ecommerce/common/widgets/login_divider.dart';
 import 'package:ecommerce/common/widgets/login_footer.dart';
-import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/features/authentication/screens/signup/widgets/signup_title.dart';
 import 'package:ecommerce/features/authentication/screens/signup/widgets/signup_form.dart';
-import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 
 

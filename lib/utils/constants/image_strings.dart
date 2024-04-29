@@ -15,6 +15,8 @@ class TImages {
   static const String onBoarding2 = 'assets/images/onboarding/sammy-line-searching.gif';
   static const String onBoarding3 = 'assets/images/onboarding/sammy-line-delivery.gif';
 
-
+  // -- Mail Verification -- //
+  static const String mailVerification = 'assets/images/login/sammy-line-man-receives-a-mail.png';
+  static const String mailSuccess = 'assets/images/login/sammy-line-man-and-woman-high-fiving-each-other.png';
 
 }
