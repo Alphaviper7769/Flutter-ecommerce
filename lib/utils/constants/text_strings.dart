@@ -12,9 +12,6 @@ class TTexts {
   static const String onBoardingSubtitle2 = "Pay with ease using our secure payment methods";
   static const String onBoardingSubtitle3 = "We deliver to your door step";
 
-  // -- Home Screen --
-  static const String homeAppbarTitle = "Good Day for Shopping";
-  static const String homeAppbarSubTitle = "Aayush Raturi";
 
   // -- Authentication Heading Screen --
   static const String loginScreenTitle = "Welcome Back";
@@ -59,4 +56,9 @@ static const String resendEmailin = "Resend Email in";
 static const String submit = "Submit";
 static const String resetPasswordTitle = "Password Reset Mail Sent";
 static const String resetPasswordSubTitle = "Your Account Security is Our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
+
+// -- Home Screen --
+static const String homeAppbarTitle = "Good Day for Shopping";
+static const String homeAppbarSubTitle = "Aayush Raturi";
+
 }

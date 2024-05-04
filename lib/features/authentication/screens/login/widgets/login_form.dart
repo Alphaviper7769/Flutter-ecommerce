@@ -1,5 +1,6 @@
 import 'package:ecommerce/features/authentication/screens/password_config/forget_password.dart';
 import 'package:ecommerce/features/authentication/screens/signup/signup.dart';
+import 'package:ecommerce/navigation_menu.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +60,7 @@ class loginForm extends StatelessWidget {
                     SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
-                      onPressed: (){},
+                      onPressed: ()=> Get.to(()=>const NavigationMenu()),
                       child: const Text(TTexts.signIn),
                     ),
                     ),

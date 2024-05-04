@@ -20,4 +20,15 @@ class TImages {
   static const String mailSuccess = 'assets/images/login/sammy-line-man-and-woman-high-fiving-each-other.png';
   static const String resetPassword = 'assets/images/login/sammy-line-41.png';
 
+  // == Categories == //
+  static const String sportsIcon = 'assets/images/products_icons/sports.png';
+  static const String clothIcon = 'assets/images/products_icons/cloth.png';
+  static const String shoesIcon = 'assets/images/products_icons/shoes.png';
+  static const String cosmeticIcon = 'assets/images/products_icons/fashion.png';
+  static const String animalIcon = 'assets/images/products_icons/animal.png';
+  static const String toysIcon = 'assets/images/products_icons/toys.png';
+  static const String furnitureIcon = 'assets/images/products_icons/furniture.png';
+  static const String jwelleryIcon = 'assets/images/products_icons/jwellery.png';
+  static const String electronicsIcon = 'Rassets/images/products_icons/electronics.png';
+
 }

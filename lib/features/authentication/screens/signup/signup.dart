@@ -1,19 +1,13 @@
-import 'package:ecommerce/common/widgets/login_divider.dart';
-import 'package:ecommerce/common/widgets/login_footer.dart';
+import 'package:ecommerce/common/widgets/login/login_divider.dart';
+import 'package:ecommerce/common/widgets/login/login_footer.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/features/authentication/screens/signup/widgets/signup_title.dart';
 import 'package:ecommerce/features/authentication/screens/signup/widgets/signup_form.dart';
-import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
-
-
-
-
 
 class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
       appBar: AppBar(),
       body:
