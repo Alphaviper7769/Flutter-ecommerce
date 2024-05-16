@@ -31,4 +31,14 @@ class TImages {
   static const String jwelleryIcon = 'assets/images/products_icons/jwellery.png';
   static const String electronicsIcon = 'Rassets/images/products_icons/electronics.png';
 
+  // -- Banner Images -- //
+  static const String banner1 = 'assets/images/banners/banner1.png';
+  static const String banner2 = 'assets/images/banners/banner2.png';
+  static const String banner3 = 'assets/images/banners/banner3.jpg';
+  
+  // -- Product Images -- //
+  static const String productImage1 = 'assets/images/products/product1.jpg';
+  static const String productImage2 = 'assets/images/products/product2.jpeg';
+  static const String productImage3 = 'assets/images/products/product3.jpeg';
+  static const String productImage4 = 'assets/images/products/product4.jpeg';
 }
