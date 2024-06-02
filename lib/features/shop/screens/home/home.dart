@@ -1,30 +1,25 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:ecommerce/common/widgets/custom_shape/container/circular_container.dart';
-import 'package:ecommerce/common/widgets/images/TRoundedImages.dart';
+import 'package:ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/HomeCategories.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/PrimaryHeaderComponent.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/promoSlider.dart';
-import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/homeAppBar.dart';
 import "package:ecommerce/features/shop/screens/home/widgets/t_search_container.dart";
-import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
         body: SingleChildScrollView(
             child: Column(children: [
       // Header
-       PrimaryHeaderComponent(
+       const PrimaryHeaderComponent(
         child: Column(
           children: [
             // App Bar
@@ -61,7 +56,9 @@ class HomeScreen extends StatelessWidget {
                   THomeCategories()
                 ],
               ),
-            )
+            ),
+
+            SizedBox(height: TSizes.spaceBtwSections,)
           ],
         ),
       ),
@@ -69,13 +66,13 @@ class HomeScreen extends StatelessWidget {
       // Body
 
       Padding(
-        padding: EdgeInsets.all(TSizes.defaultSpace),
+        padding: const EdgeInsets.all(TSizes.defaultSpace),
 
         // -- Promo Banner and Slider -- //
 
         child: Column(
           children: [
-            TPromoSlider(
+            const TPromoSlider(
               banners: [
                 TImages.banner1,
                 TImages.banner2,
@@ -84,12 +81,16 @@ class HomeScreen extends StatelessWidget {
              
             ),
 
-            SizedBox(
+            const SizedBox(
               height: TSizes.spaceBtwSections,),
 
+              // -- Heading
+               TSectionHeading(title:'Popular Products', onPressed: (){}),
+               const SizedBox(height: TSizes.spaceBtwItems,),
+
              // -- Popular Products -- //
-            
-              TProductCardVertical(),
+              TGridLayout(itemCount: 4, itemBuilder: ( _ , index) => const TProductCardVertical()),
+              
 
           ],
         ),
@@ -102,3 +103,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+

@@ -1,4 +1,5 @@
 /// This file contains all the image paths used in the app.
+library;
 
 class TImages {
 
@@ -38,7 +39,10 @@ class TImages {
   
   // -- Product Images -- //
   static const String productImage1 = 'assets/images/products/product1.jpg';
-  static const String productImage2 = 'assets/images/products/product2.jpeg';
-  static const String productImage3 = 'assets/images/products/product3.jpeg';
+  static const String productImage2 = 'assets/images/products/product2.jpg';
+  static const String productImage3 = 'assets/images/products/product3.jpg';
   static const String productImage4 = 'assets/images/products/product4.jpeg';
+
+  // -- User Profile -- //
+  static const String user = 'assets/images/profile/sampleProfilePic.jpg';
 }

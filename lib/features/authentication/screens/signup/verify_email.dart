@@ -6,10 +6,11 @@ import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
+  const VerifyEmailScreen({super.key});
+
   
 
   @override
@@ -48,7 +49,7 @@ class VerifyEmailScreen extends StatelessWidget {
                   image: TImages.mailSuccess,
                   title: TTexts.yourAccountCreatedTitle,
                   subtitle: TTexts.yourAccountCreatedSubTitle,
-                  onPressed: ()=>Get.to(()=>LoginScreen()
+                  onPressed: ()=>Get.to(()=>const LoginScreen()
                )
               ),
               ),

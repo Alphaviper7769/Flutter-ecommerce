@@ -14,14 +14,14 @@ class loginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: TSizes.spaceBtwSections),
+                  padding: const EdgeInsets.symmetric(vertical: TSizes.spaceBtwSections),
                   child: Column(
                   children: [
 
                     //Email
                     TextFormField(
                     decoration: const InputDecoration(
-                      prefixIcon: const Icon(Iconsax.direct_right),
+                      prefixIcon: Icon(Iconsax.direct_right),
                       labelText: TTexts.email,
                     ),
 
@@ -70,7 +70,7 @@ class loginForm extends StatelessWidget {
                     SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
-                      onPressed: ()=> Get.to(()=>SignupScreen()),
+                      onPressed: ()=> Get.to(()=>const SignupScreen()),
                       child: const Text(TTexts.createAccount),
                     ),
                     ),

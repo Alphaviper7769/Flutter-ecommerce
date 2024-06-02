@@ -6,33 +6,35 @@ import 'package:ecommerce/features/authentication/screens/signup/widgets/signup_
 import 'package:flutter/material.dart';
 
 class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
       body:
-      SingleChildScrollView(
+      const SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               //LOGO , TITLE & SubTitle
-              const signupTitle(),
+              signupTitle(),
 
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              SizedBox(height: TSizes.spaceBtwSections,),
 
               signupForm(),
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              SizedBox(height: TSizes.spaceBtwSections,),
 
               //Divider
 
               loginDivider(),
-              const SizedBox(height: TSizes.spaceBtwInputFields,),
+              SizedBox(height: TSizes.spaceBtwInputFields,),
 
               //Footer
 
               login_footer(),
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              SizedBox(height: TSizes.spaceBtwSections,),
 
               //SignupFooter()r
             ],

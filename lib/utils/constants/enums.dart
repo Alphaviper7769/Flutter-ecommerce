@@ -1,4 +1,5 @@
 /// This file contains all the enums used in the app.
+library;
 
 enum TextSizes {
   small,
