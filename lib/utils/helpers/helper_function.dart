@@ -27,11 +27,8 @@ class THelperFunctions {
     } 
     else if (value == 'White') {
       return Colors.white;
-    } 
-    else {
-      // Default color if value doesn't match any of the above
-      return Colors.transparent;
     }
+    return null; 
   }
 
   static void showSnackBar(String message, {int duration = 3}) {
