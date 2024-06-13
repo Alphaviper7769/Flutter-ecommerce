@@ -1,15 +1,9 @@
 import 'package:ecommerce/common/widgets/appBar/appbar.dart';
 import 'package:ecommerce/features/shop/screens/product_details/widgets/rating_indicator.dart';
 import 'package:ecommerce/features/shop/screens/product_reviews/widgets/overall_product_rating.dart';
-import 'package:ecommerce/features/shop/screens/product_reviews/widgets/progress_indicator_and_rating.dart';
 import 'package:ecommerce/features/shop/screens/product_reviews/widgets/user_review_card.dart';
-import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
-import 'package:ecommerce/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
-import 'package:iconsax/iconsax.dart';
 
 class ProductReviewsScreen extends StatelessWidget {
   const ProductReviewsScreen({super.key});
@@ -21,7 +15,7 @@ class ProductReviewsScreen extends StatelessWidget {
     return Scaffold(
 
         /// App Bar
-        appBar: TAppBar(title: Text("Reviews & Ratings")),
+        appBar: const TAppBar(title: Text("Reviews & Ratings")),
 
         /// Body
         body: SingleChildScrollView(
@@ -41,8 +35,8 @@ class ProductReviewsScreen extends StatelessWidget {
                       const SizedBox(height: TSizes.spaceBtwSections),
 
                       // User Review List
-                      UserReviewCard(),
-                      UserReviewCard()
+                      const UserReviewCard(),
+                      const UserReviewCard()
 
                     ]))));
   }

@@ -11,7 +11,7 @@ class TOverallProductRating extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(children: [
       Expanded(flex: 3,child: Text('4.8' , style: Theme.of(context).textTheme.displayMedium)),
-      Expanded(
+      const Expanded(
         flex: 11,
         child: Expanded(
           flex: 7,

@@ -1,6 +1,7 @@
 import 'package:ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:ecommerce/common/widgets/texts/section_heading.dart';
+import 'package:ecommerce/features/shop/screens/all_products/all_products.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/HomeCategories.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/PrimaryHeaderComponent.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/promoSlider.dart';
@@ -9,6 +10,7 @@ import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/homeAppBar.dart';
 import "package:ecommerce/features/shop/screens/home/widgets/t_search_container.dart";
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -19,7 +21,7 @@ class HomeScreen extends StatelessWidget {
         body: SingleChildScrollView(
             child: Column(children: [
       // Header
-       const PrimaryHeaderComponent(
+        const PrimaryHeaderComponent(
         child: Column(
           children: [
             // App Bar
@@ -47,6 +49,10 @@ class HomeScreen extends StatelessWidget {
                   TSectionHeading(
                     title: 'Popular Categories',
                     showActionButton: false,
+                    // onPressed:  () => Get.to(() => const AllProducts())
+                    // onPressed: () {
+                    //   print('test');
+                    // },
                   ),
                   SizedBox(
                     height: TSizes.spaceBtwItems,
@@ -85,7 +91,7 @@ class HomeScreen extends StatelessWidget {
               height: TSizes.spaceBtwSections,),
 
               // -- Heading
-               TSectionHeading(title:'Popular Products', onPressed: (){}),
+               TSectionHeading(title:'Popular Products',showActionButton: true, onPressed:  () => Get.to(() => const AllProducts())),
                const SizedBox(height: TSizes.spaceBtwItems,),
 
              // -- Popular Products -- //

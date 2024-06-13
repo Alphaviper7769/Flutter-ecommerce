@@ -45,4 +45,13 @@ class TImages {
 
   // -- User Profile -- //
   static const String user = 'assets/images/profile/sampleProfilePic.jpg';
+
+  // -- Payment Methods -- //
+  static const String visa = 'assets/images/payment/visa.png';
+  static const String paytm = 'assets/images/payment/paytm.png';
+  static const String phonepay = 'assets/images/payment/phonepay.png';
+  static const String googlePay = 'assets/images/payment/google-pay-icon.png';
+
+  // -- Successful Payment -- //
+  static const String successPayment = 'assets/images/payment/paymentSuccessful.png';
 }
